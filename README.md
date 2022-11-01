@@ -26,3 +26,34 @@ del siguiente software:
 |  Python  | => 3.8  |
 |   pip    |   \*    |
 
+Dentro del directorio con el código del proceso (`src/app`) se encuentra un fichero `requerimientos.txt` que contiene las dependencias que necesita el script para
+funcionar adecuadamente. Es recomendable crear un entorno virtual de Python[¹ ²](#referencias) (`virtualenv`), acceder al mismo e instalar dichas  dependencias mediante el comando `pip install -r requerimientos.txt` (recuerde ubicarse en su shell dentro del directorio `src/app`).
+- Linux/MAC
+```bash
+  $ cd src/app
+  $ python3 -m venv venv
+  $ source venv/bin/activate
+  (venv)$ pip install -r requerimientos.txt
+```
+- Windows
+```bash
+  $ cd src/app
+  $ virtualenv venv
+  $ venv/Scripts/activate
+  (venv)$ pip install -r requerimientos.txt
+```
+- Motor de base de datos
+
+|  Software  | Versión |
+|:----------:|:-------:|
+| Postgresql | => 9.6  |
+
+
+
+## Referencias
+
+1. Tutorial de virtualenv, en inglés
+   https://docs.python-guide.org/dev/virtualenvs/#lower-level-virtualenv
+
+2. Tutorial de virtualenv, en español
+   https://rukbottoland.com/blog/tutorial-de-python-virtualenv/
