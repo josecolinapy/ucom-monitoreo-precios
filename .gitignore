@@ -133,3 +133,4 @@ dmypy.json
 /.idea/modules.xml
 /.idea/ucom-monitoreo-precios.iml
 /.idea/vcs.xml
+/.idea/.gitignore

@@ -48,6 +48,17 @@ funcionar adecuadamente. Es recomendable crear un entorno virtual de Python[¹ �
 |:----------:|:-------:|
 | Postgresql | => 9.6  |
 
+* Diagrama de la base de datos
+
+![DER de la base de datos](src/model/DER.png)
+
+* **Instalación de POSTGRESQL**  
+Instalar según plataforma: https://wiki.postgresql.org/wiki/Detailed_installation_guides
+* **Inicialización de la base de datos**  
+Es necesario ejecutar el script DDL, para ello debemos ejecutar el comando psql(CLI de postgres).
+
+   `psql -h mi_host -p mi_puerto -d mi_db -U mi_usuario -f src/app/model/db/scrips.sql`
+
 
 
 ## Referencias
